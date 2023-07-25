@@ -14,14 +14,6 @@ body:
       description: 請提供欲回報之PTT帳號。
     validations:
       required: true
-  - type: textarea
-    id: what-happened
-    attributes:
-      label: 為什麼該帳號應該被標記？
-      description: 請概略描述該帳號之行為，例如惡意辱罵、散佈假訊息等。
-      placeholder: 請告訴我們您所見到的情況
-    validations:
-      required: true
   - type: input
     id: ip-address
     attributes:
@@ -50,12 +42,22 @@ body:
     id: logs
     attributes:
       label: 推文記錄
-      description: 請複製並貼上用以證明本次回報之相關推文。
+      description: 請複製貼上用以證明本次回報之相關推文，亦可使用手機截圖。
+    validations:
+      required: true
+  - type: textarea
+    id: what-happened
+    attributes:
+      label: 為什麼該帳號應該被標記？
+      description: 請概略描述該帳號之行為，例如惡意辱罵、散佈假訊息等。
+      placeholder: 請告訴我們您所見到的情況
+    validations:
+      required: true
   - type: checkboxes
     id: terms
     attributes:
-      label: Code of Conduct
-      description: 您是否同意，您所提交的回報表單已如實填寫，並遵循我們所規範的[行為準則](https://github.com/)。
+      label: 行為準則
+      description: 您是否同意，您所提交的回報表單已如實填寫，並遵循我們所規範的[行為準則](https://github.com/)。若您做出虛假回報，我們有權利終止您參與本專案的資格。
       options:
         - label: 我同意並遵守本專案之行為準則
           required: true
