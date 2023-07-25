@@ -1,0 +1,61 @@
+name: 帳號回報
+description: 回報帳號以協助我們建檔
+title: "[帳號回報]: "
+labels: ["report"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        請花點時間填寫本回報表單，我們會非常感謝您的。
+  - type: input
+    id: account
+    attributes:
+      label: PTT帳號
+      description: 請提供欲回報之PTT帳號。
+    validations:
+      required: true
+  - type: textarea
+    id: what-happened
+    attributes:
+      label: 為什麼該帳號應該被標記？
+      description: 請概略描述該帳號之行為，例如惡意辱罵、散佈假訊息等。
+      placeholder: 請告訴我們您所見到的情況
+    validations:
+      required: true
+  - type: input
+    id: ip-address
+    attributes:
+      label: IP位址
+      description: 請提該PTT帳號之IP位址，可以是推文當下之IP位址或是最後登入IP位址。
+      placeholder: IP位址
+    validations:
+      required: false
+  - type: input
+    id: board
+    attributes:
+      label: 看板
+      description: 回報之言論來自哪個看板？
+      placeholder: Gossiping
+    validations:
+      required: true
+  - type: input
+    id: url
+    attributes:
+      label: 文章網址
+      description: 請提供文章網址，除非原文已遭刪除，否則請一概使用官方網址（www.ptt.cc）。
+      placeholder: https://www.ptt.cc/bbs/Gossiping/M.1690311210.A.1B0.html
+    validations:
+      required: true
+  - type: textarea
+    id: logs
+    attributes:
+      label: 推文記錄
+      description: 請複製並貼上用以證明本次回報之相關推文。
+  - type: checkboxes
+    id: terms
+    attributes:
+      label: Code of Conduct
+      description: 您是否同意，您所提交的回報表單已如實填寫，並遵循我們所規範的[行為準則](https://github.com/)。
+      options:
+        - label: 我同意並遵守本專案之行為準則
+          required: true
