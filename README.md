@@ -10,3 +10,12 @@ Taiwan's PTT Purifier Filter
 
 我們希望透過這些標記和分類的方式，讓PTT成為一個更加友善且建設性的交流平台，為所有使用者提供更好的討論環境。
 
+## 專案進程
+🟩廣泛收集帳號回報
+🟨發想程式架構與資料儲存格式
+⬜編寫程式
+⬜發布
+
+## 協作方式
+回報帳號請至[Issues](https://github.com/TobySkarting/TaiwanPttPurifier/issues)填寫表單。
+也歡迎有coding能力者一同參與開發！
