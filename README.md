@@ -19,4 +19,5 @@ Taiwan's PTT Purifier Filter
 
 ## 協作方式
 回報帳號請至[Issues](https://github.com/TobySkarting/TaiwanPttPurifier/issues)填寫表單。
-也歡迎有coding能力者一同參與開發！
+
+也歡迎有coding能力者一同參與程式開發！
